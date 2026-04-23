@@ -1,4 +1,4 @@
-name: Hello World
+name: ports
 on:
   push:
     branches:
@@ -7,5 +7,5 @@ jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Print Hello World
-        run: echo "Hello World"
+      - name: checking ports
+        run: lsof -la
